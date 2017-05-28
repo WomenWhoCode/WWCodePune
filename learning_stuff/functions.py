@@ -1,20 +1,20 @@
-def boom():
-    print('Hello')
+# def boom():
+#     print('Hello')
 
-#boom()
+# boom()
 
 
-# a = 7
-
+#a = 7
+ 
 # def boom(a):
 #     print('a',a)
 
-# #boom(a)
-
+# boom(a)
+# a=10
 # def boom(a=0):
 #     print('a',a)
 
-# #boom()
+# boom(a)
 
 
 # b = 10
@@ -23,17 +23,30 @@ def boom():
 
 # boom(a,b)
 
-
-# def boom(a,b=None):
+# a=1
+# b=100
+# def boom(a,b):
 #     print('a,b',a,b)
-
-# boom(a)
-
+#b=9
+# def boom(b=0):
+    
+    
+#     print('b',b)
+# boom()
+# a=10
 # c = 15
+# b=5
+# def boom(*args, **kwargs):
+#     print('args', args[3])
+#     print('kwargs', kwargs['first'])
+    
+# boom(1,2,3,4,5,first=10,second=20)
+    
+#a = range(10)
+#for i in a:
+#    print(i)
 
-# #def boom(a,b=None,c):
-# #    print('a,b,c',a,b,c)
-
+#boom()
 # def boom(a,c,b=None):
 #     print('a,b,c',a,b,c)
 
@@ -45,19 +58,23 @@ def boom():
 # boom(1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6)
 
 
-#def boom(*args):
-#    print('args',args)
-#    print('0th', args[0])
-#    print('Answer this',args[-1])
-#    print('Answer this',args[:-1])
-#boom(1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6)
-#boom(range(30))
+def boom(*args):
+    pass
+   #print('args',args)
+   #print('0th', args[0][0][1])
+   #print('Answer this',args[-1]) [start:stop:step]
+   #print('Answer this',args[:-9:2])
+#boom([[1,2,3]],2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6)
+#boom(range(30))  
 #boom(*range(30))
 
 # def boom(**kwargs):
 #     print('kwargs', kwargs)
+#     return 'boom called'
 
-# boom(b=1,c=2)
+# #a = boom(b=1,c=2)
+
+# print(boom(b=1,c=2)) 
 
 # def boom(*args, **kwargs):
 #     print('args, kwargs', args, kwargs)
@@ -67,12 +84,17 @@ def boom():
 
 
 # Lambda functions
+#def a(1):
+#    return 1+1
 
 #a = lambda x:x+1
 #print(a(1))
 
+#def a(x,y):
+#    return x+y
+
 #a = lambda x,y: x+y
-#print(a(1,1))
+#print(a(1,100))
 
 
 # Uses of Lambda
@@ -82,22 +104,24 @@ def boom():
 
 # map functions
 
-#def boom(a):
-#    return a+100
+def boom(a):
+    return a+100
 
-# map(function, iterative structure)
 
-#a = map(boom, 1) # Guess how to resolve this error
+#map(function, iterative structure)
+
+#a = map(boom, range(100)) # Guess how to resolve this error
 #print('a',a)
 
 
 # using map with lambda
 #print(map(lambda x: x+100, [1,2]))
 
+
+
 #print(map(lambda x: x+100 if x<10 else x+1000, [1,2, 11]))
 
 #print(map(lambda x: x+100 if x<10, [1,2, 11])) # A lambda must always return a value
-
 
 # Using map as an identity function
 #print(map(None, [1,2,3]))
@@ -111,7 +135,7 @@ def boom():
 #             temp.append(i)
 #     return temp
 
-#print(even([1,2,3,4,5,6,7,8,9]))
+# print(even([1,2,3,4,5,6,7,8,9]))
 
 
 # partial solution
@@ -125,8 +149,9 @@ def boom():
 
 
 # Using (filter in map) using lambda
-# Find the squares of the odd numbers in the list [1,2,3,4,5,6,7,8,9]
-#print(map(lambda x: x*x, filter(lambda x: x%2, [1,2,3,4,5,6,7,8,9])))
+#Find the squares of the odd numbers in the list [1,2,3,4,5,6,7,8,9]
+print(map(lambda x: x*x, filter(lambda x: x%2, [1,2,3,4,5,6,7,8,9])))
+
 
 
 
