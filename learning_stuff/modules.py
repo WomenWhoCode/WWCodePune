@@ -3,8 +3,11 @@ import sys
 
 print(sys.path)
 
-print(boom(a=1))
+# from functions import boom
+# import sys
 
+# print(sys.path)
+# boom()
 
 # from functions import *
 
@@ -14,6 +17,8 @@ print(boom(a=1))
 #import functions as f
 #f.boom()
 
+import functions as f
+f.boom()
 
 # Try importing a function/class from another directory with and without __init__.py in the func/class file directory
 
