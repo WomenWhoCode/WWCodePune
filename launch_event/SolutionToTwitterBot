@@ -27,6 +27,6 @@ while True:
         break
     print user.screen_name    
 
-#follow WWCodePune of not already following
+#follow WWCodePune if not already following
 if api.lookup_friendships(00000000000,'@WWCodePune'):
   api.create_friendship('@WWCodePune')
